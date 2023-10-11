@@ -1,0 +1,62 @@
+<div class="container contenedor">
+    <h3 class="text-center mb-4 tituloSeccion">ANIMACIONES EN ANGULAR</h3>
+    <p>
+        La anatomia o cuerpo de una animacion en angular es como vemos en la imagen de 
+        abajo, se suele declara dentro del decorador @Component donde se ubican el selector,
+        la direccion del archivo de estilos.
+    </p>
+    <br>
+    <div class="codigoDestacado">
+        <pre><code appResaltado [code]="codigoAnimacion"></code></pre>
+    </div>
+    <br>
+    <p>
+        Las partes fundamentales de una animación son las siguientes teniendo como 
+        referencia el codigo de arriba: 
+        <br><br>
+        <li>
+            trigger: es como vamos a nombrar a nuestra animación y donde se va a agrupar 
+            toda la configuración de la animación.
+        </li>
+        <li>
+            state: en nuestras aplicaciones angular, podremos definir diferentes estados, entre 
+            los que podremos cambiar para realizar animaciones entre ellos.
+        </li>
+        <li>
+            transition: indicaremos entre qué estados queremos ejecutar una transición.
+        </li>
+        <li>
+            query: lo utilizaremos cuando tengamos la necesidad de animar múltiples elementos.
+        </li>
+        <li>
+            animate: definiremos cuánto tiempo queremos que dure la transición, tipo de aceleración.
+        </li>
+        <br>
+        Después asignamos esa animacion a un elemento.
+    </p>
+    <br>
+    <div class="codigoDestacado">
+        <pre><code appResaltado [code]="codigoAnimacion2"></code></pre>
+    </div>
+    <br>
+    <p>
+        Ahora que hemos visto los conceptos básicos de las animaciones vamos a ver los diferentes
+        tipos de animaciones y como ejecutarlas con el modulo de animaciones angular.
+        <br><br>
+        <li>Animaciones entre cambios de estado</li>
+        <li>Animaciones de entrada y salida de componentes</li>
+        <li>Animaciones con multiples fases</li>
+        <li>Animaciones secuenciales</li>
+        <li>Animaciones que afectan a multiples elementos</li>
+        <li>Animar elementos hijos</li>
+        <li>Animaciones durante la navegación</li>
+    </p>
+
+
+
+    <!-- <div [@slideInOut]="state" class="box"></div>
+    <button (click)="toggleState()">Toggle</button> -->
+
+
+</div>
+
