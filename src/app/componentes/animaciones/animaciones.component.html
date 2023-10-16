@@ -52,6 +52,52 @@
         <li>Animaciones durante la navegación</li>
     </p>
 
+    <h5>Animaciones entre cambios de estado</h5>
+    <p>
+        Vamos a definir un trigger con 4 estados ya que van a ser el estado base del componente,
+        estirado, ensanchado y rotado luego definiremos una transición de tipo *=>*. El valor *
+        significa cualquier estado asique siempre que se pase de un estado a otro diferente 
+        lanzaremos la transición.
+    </p>
+    <br>
+    
+    <button type="button" class="btn btn-secondary" style="margin-bottom: 40px;" (click)="animate()">Animacion</button>
+    <div [@stateChange]="animationState"></div>
+    <br>
+
+    <h5>Animaciones de entrada y salida</h5>
+    <p>
+        Realizar animaciones cuando los elementos entran o salen de la pantalla nos otorga un “plus” en la experiencia de 
+        usuario, ya que estamos acostumbrados que en la vida real los objetos se mueven a una velocidad y aceleración 
+        determinada en lugar de aparecer de repente.
+        Para este tipo de animaciones crearemos un trigger, con 2 transitions, uno para la animación de entrada y otro 
+        para la salida.      
+    </p>
+    <br>
+   
+    <div style="margin-bottom: 40px;" class="actions">
+        <button type="button" class="btn btn-secondary" (click)="showHide()">{{ show ? 'Ocultar' : 'Mostrar' }}</button>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;" *ngIf="show" @fadeInOut>
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://images.unsplash.com/photo-1557872943-16a5ac26437e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2516&q=80" class="img-fluid rounded-start" alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Ramen</h5>
+              <p class="card-text">12€</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <p>
+        Podemos encontrar mas animaciones en el siguiente enlance: 
+        <a class="enlace-estilizado" href="https://jalcantara90.medium.com/mejora-la-ux-de-tus-aplicaciones-angular-con-animaciones-fcb3533ed98f" target="_blank">Visitar Ejemplo</a><br>    
+        <a class="enlace-estilizado" href="https://github.com/jalcantara90/angular-animations/blob/master/src/app/shared/animations/route.animations.ts">Github</a>
+    </p>
+    <br>
 
 
     <!-- <div [@slideInOut]="state" class="box"></div>

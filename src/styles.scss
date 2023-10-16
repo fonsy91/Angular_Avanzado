@@ -185,6 +185,16 @@ h6 {
     color: #333;
 }
 
+.enlace-estilizado {
+    text-decoration: none; /* Para quitar la subrayado predeterminado */
+    color: #0077cc; /* Color del texto del enlace */
+    font-weight: bold; /* Peso de la fuente en negrita */
+}
+  
+.enlace-estilizado:hover {
+    color: #ff4500; /* Cambia el color del texto al pasar el mouse sobre el enlace */
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
