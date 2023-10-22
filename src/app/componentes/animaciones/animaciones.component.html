@@ -10,6 +10,7 @@
         <pre><code appResaltado [code]="codigoAnimacion"></code></pre>
     </div>
     <br>
+    
     <p>
         Las partes fundamentales de una animación son las siguientes teniendo como 
         referencia el codigo de arriba: 
@@ -35,6 +36,7 @@
         Después asignamos esa animacion a un elemento.
     </p>
     <br>
+    
     <div class="codigoDestacado">
         <pre><code appResaltado [code]="codigoAnimacion2"></code></pre>
     </div>
@@ -64,6 +66,10 @@
     <button type="button" class="btn btn-secondary" style="margin-bottom: 40px;" (click)="animate()">Animacion</button>
     <div [@stateChange]="animationState"></div>
     <br>
+    <div class="codigoDestacado">
+        <pre><code appResaltado [code]="codigoAnimacion3"></code></pre>
+    </div>
+    <br>
 
     <h5>Animaciones de entrada y salida</h5>
     <p>
@@ -92,13 +98,19 @@
         </div>
     </div>
     <br>
+    
     <p>
         Podemos encontrar mas animaciones en el siguiente enlance: 
         <a class="enlace-estilizado" href="https://jalcantara90.medium.com/mejora-la-ux-de-tus-aplicaciones-angular-con-animaciones-fcb3533ed98f" target="_blank">Visitar Ejemplo</a><br>    
         <a class="enlace-estilizado" href="https://github.com/jalcantara90/angular-animations/blob/master/src/app/shared/animations/route.animations.ts">Github</a>
     </p>
     <br>
-
+    
+    <div class="codigoDestacado">
+        <pre><code appResaltado [code]="codigoAnimacion4"></code></pre>
+    </div>
+    
+    
 
     <!-- <div [@slideInOut]="state" class="box"></div>
     <button (click)="toggleState()">Toggle</button> -->
